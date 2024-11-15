@@ -1,0 +1,18 @@
+# Intuition
+2 elements are to be added therefore we can use one element and other we can check by subtracting the element.
+
+# Approach
+The best way to check the element on O(1) is using HashMap or HashSet. 
+
+There is a case where target-element=element, for eg: 10-5=5. If we use HashSet then we will be getting the same element which is 5, and if we find the element in the HashSet we will get 5 again.
+
+Hence, We need to use HashMap of HashSet where we will be keeping information of element in HashMap and it's indices in it's HashSet.
+Rest go through my code it is self explanatory.
+
+# Complexity
+- Time complexity:
+  For n times Search in HashMap takes O(1), even if there is a match there can be maximum of 2 iteration in the HashSet. Hence, Total time complexity is O(n).
+
+- Space complexity:
+  For each element there will a O(1) addition to either the HashMap or the HashSet inside HashMap.
+  Therefore, the total space complexity is O(n).
