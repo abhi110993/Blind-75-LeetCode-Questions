@@ -1,0 +1,14 @@
+# Intuition
+First we have to buy and then we have to sell. We need to sell at the maximum value and buy at the minimum value. Also, buy before selling.
+
+# Approach
+If we select the selling point first and then find the minimum value of buying point before selling point we will get our answer. 
+
+We will consider the maximum value at the last of the array ad then slowly we will traverse back and keep updating the maximum value and maximum profit.
+
+# Complexity
+- Time complexity:
+    Here we will only have to look at each value only once. Hence the time complexity is O(n).
+
+- Space complexity:
+    Only few number of variables are used here so Space Complexity is O(1).
