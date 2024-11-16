@@ -12,3 +12,16 @@ We will consider the maximum value at the last of the array ad then slowly we wi
 
 - Space complexity:
     Only few number of variables are used here so Space Complexity is O(1).
+
+# Code
+class Solution {
+    public int maxProfit(int[] a) {
+        int max = a[a.length-1];
+        int maxD = 0;
+        for(int i=a.length-1;i>=0;i--){
+            max = Math.max(a[i], max);
+            maxD = Math.max(maxD, max-a[i]);
+        }
+        return maxD;
+    }
+}
