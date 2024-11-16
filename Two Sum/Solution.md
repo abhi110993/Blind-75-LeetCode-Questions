@@ -1,3 +1,7 @@
+# Question
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
 # Intuition
 2 elements are to be added therefore we can use one element and other we can check by subtracting the element.
 
