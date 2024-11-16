@@ -16,3 +16,23 @@ Rest go through my code it is self explanatory.
 - Space complexity:
   For each element there will a O(1) addition to either the HashMap or the HashSet inside HashMap.
   Therefore, the total space complexity is O(n).
+
+# Code
+class Solution {
+    public int[] twoSum(int[] a, int target) {
+        HashMap<Integer, ArrayList<Integer>> hm = new HashMap<>();
+        for(int i=0;i<a.length;i++){
+            if(!hm.containsKey(a[i]))
+                hm.put(a[i], new ArrayList<>());
+            hm.get(a[i]).add(i);
+            int rem = target-a[i];
+            if(hm.containsKey(rem)){
+                for(int j: hm.get(rem)){
+                    if(i!=j)
+                        return new int[]{i,j};
+                }
+            }
+        }
+        return new int[]{-1};
+    }
+}
