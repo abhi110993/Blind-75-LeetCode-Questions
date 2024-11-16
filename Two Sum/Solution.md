@@ -18,6 +18,7 @@ Rest go through my code it is self explanatory.
   Therefore, the total space complexity is O(n).
 
 # Code
+```
 class Solution {
     public int[] twoSum(int[] a, int target) {
         HashMap<Integer, ArrayList<Integer>> hm = new HashMap<>();
@@ -36,3 +37,4 @@ class Solution {
         return new int[]{-1};
     }
 }
+```
